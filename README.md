@@ -1,40 +1,34 @@
-# VICSTA Hackathon – Grand Finale
-**VIT College, Kondhwa Campus | 5th – 6th March**
+# Welcome to NutriSync AI
 
----
+NutriSync AI is a smart nutrition tracking application designed to help you and your family optimize your eating habits, meals, and overall health.
 
-## Team Details
+## Technologies Used
 
-- **Team Name:**
-- **Members:**
-- **Domain:**
+This project is built with:
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
+- Firebase (Auth, Firestore)
 
----
+## How to Run Locally
 
-## Project
+### Requirements
+- Node.js & npm
 
-**Problem:** 
+### Setup
 
-**Solution:** 
+```sh
+# Step 1: Clone the repository
+git clone <YOUR_REPO_URL>
 
----
+# Step 2: Navigate to the project directory
+cd nutrisync-ai-main
 
-## Rules to Remember
+# Step 3: Install dependencies
+npm i
 
-- All development must happen **during** the hackathon only
-- Push code **regularly** — commit history is monitored
-- Use only open-source libraries with compatible licenses and **credit them**
-- Only **one submission** per team
-- All members must be present **both days**
-
----
-
-## Attribution
-
-List any external libraries, APIs, or datasets used here.
-
----
-
-> *"The world is not enough — but it is such a perfect place to start."* — James Bond
->
-> All the best to every team. Build something great. 🚀
+# Step 4: Start the development server
+npm run dev
+```
