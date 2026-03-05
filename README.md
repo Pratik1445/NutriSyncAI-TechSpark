@@ -21,7 +21,7 @@ This project is built with:
 
 ```sh
 # Step 1: Clone the repository
-git clone <YOUR_REPO_URL>
+git clone https://github.com/Pratik1445/NutriSyncAI-TechSpark.git
 
 # Step 2: Navigate to the project directory
 cd nutrisync-ai-main
