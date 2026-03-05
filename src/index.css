@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 200 10% 7%;
+    --foreground: 40 6% 97%;
+
+    --card: 200 8% 12%;
+    --card-foreground: 40 6% 97%;
+
+    --popover: 200 8% 12%;
+    --popover-foreground: 40 6% 97%;
+
+    --primary: 142 69% 58%;
+    --primary-foreground: 200 10% 7%;
+
+    --secondary: 168 64% 52%;
+    --secondary-foreground: 200 10% 7%;
+
+    --muted: 200 6% 18%;
+    --muted-foreground: 200 6% 55%;
+
+    --accent: 263 70% 70%;
+    --accent-foreground: 40 6% 97%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 40 6% 97%;
+
+    --border: 200 6% 20%;
+    --input: 200 6% 20%;
+    --ring: 142 69% 58%;
+
+    --radius: 1rem;
+
+    --sidebar-background: 200 8% 10%;
+    --sidebar-foreground: 200 6% 70%;
+    --sidebar-primary: 142 69% 58%;
+    --sidebar-primary-foreground: 200 10% 7%;
+    --sidebar-accent: 200 6% 15%;
+    --sidebar-accent-foreground: 40 6% 97%;
+    --sidebar-border: 200 6% 16%;
+    --sidebar-ring: 142 69% 58%;
+
+    /* Custom tokens */
+    --glass: 200 8% 14%;
+    --glass-border: 200 6% 22%;
+    --glow-green: 142 69% 58%;
+    --glow-teal: 168 64% 52%;
+    --glow-purple: 263 70% 70%;
+    --glow-red: 0 84% 60%;
+    --glow-blue: 213 94% 68%;
+    --glow-yellow: 45 93% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-card/60 backdrop-blur-xl border border-glass-border rounded-2xl;
+  }
+
+  .glass-nav {
+    @apply bg-card/80 backdrop-blur-xl border-t border-glass-border;
+  }
+
+  .glow-green {
+    box-shadow: 0 0 20px hsl(var(--glow-green) / 0.3);
+  }
+
+  .glow-teal {
+    box-shadow: 0 0 20px hsl(var(--glow-teal) / 0.3);
+  }
+
+  .glow-purple {
+    box-shadow: 0 0 20px hsl(var(--glow-purple) / 0.3);
+  }
+
+  .btn-press {
+    @apply transition-transform active:scale-[0.97];
+  }
+
+  .bg-radial-glow {
+    background: radial-gradient(ellipse at 20% 50%, hsl(142 69% 58% / 0.06) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 80%, hsl(168 64% 52% / 0.04) 0%, transparent 50%),
+                hsl(var(--background));
+  }
+}
