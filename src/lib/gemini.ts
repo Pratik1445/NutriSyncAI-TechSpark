@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const API_KEY = "AIzaSyBgEUEJfuel_Og5E2hldMc8d5qAgPo_guA";
+const API_KEY = "AIzaSyCBKzadbwVxn4p6_mU0zi47Ruj3cBKOS9w";
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 export const generateRecipe = async (prompt: string) => {
@@ -35,3 +35,4 @@ export const generateRecipeFromImage = async (base64Image: string, mimeType: str
         throw new Error("Failed to generate recipe from image.");
     }
 };
+
