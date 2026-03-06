@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const API_KEY = "AIzaSyCY8IgaG_-sGX0wNmbhGD1PZI-KuTZo63Y";
+const API_KEY = "AIzaSyBgEUEJfuel_Og5E2hldMc8d5qAgPo_guA";
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 export const generateRecipe = async (prompt: string) => {
